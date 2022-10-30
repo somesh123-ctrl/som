@@ -1,4 +1,5 @@
-
+// C++ program to implement the program
+// that illustrates Online shopping
 #include <bits/stdc++.h>
 #include <cstring>
 #include <iostream>
@@ -55,8 +56,7 @@ void printBill(map<string, double> items,
 		<< total_amount << endl;
 	cout << "-----------------------"
 		<< "-------------\n";
-	cout << "*****THANK YOU && HAPPY"
-		<< " ONLINE SHOPPING*****";
+	
 }
 
 
@@ -79,9 +79,9 @@ void showEspressoMenu()
 {
 	cout << "- - - - - - - - - - -"
 		<< " - -\nItem	 Cost\n";
-	cout << "1.milk Rs.15, 000/-\n";
-	cout << "2.cream Rs.12, 000/-\n";
-	cout << "3.latte Rs.1, 00, 000/-\n";
+	cout << "1.milk Rs.60/-\n";
+	cout << "2.cream Rs.75/-\n";
+	cout << "3.latte Rs.100/-\n";
 	cout << "- - - - - - - - - - - - -\n";
 }
 
@@ -90,9 +90,9 @@ void showCapassinnoMenu()
 {
 	cout << "- - - - - - - - - - -"
 		<< " - -\nItem	 Cost\n";
-	cout << "1.milk Rs.2, 00, 000/-\n";
-	cout << "2.cream	 Rs.40, 000/-\n";
-	cout << "3.latte Rs.35, 000/-\n";
+	cout << "1.milk Rs.80/-\n";
+	cout << "2.cream	 Rs.90/-\n";
+	cout << "3.latte Rs.125/-\n";
 	cout << "- - - - - - - - - - - - -\n";
 }
 
@@ -101,9 +101,9 @@ void showLatteMenu()
 {
 	cout << "- - - - - - - - - - "
 		<< " - -\nItem	 Cost\n";
-	cout << "1.milk	 Rs.1, 000/-\n";
-	cout << "2.cream	 Rs.3, 000/-\n";
-	cout << "3.latte	 Rs.4, 000/-\n";
+	cout << "1.milk	 Rs.1, 00/-\n";
+	cout << "2.cream	 Rs.125/-\n";
+	cout << "3.latte	 Rs.150/-\n";
 	cout << "- - - - - - - - - - - - -\n";
 }
 
@@ -437,4 +437,3 @@ cout << "Do you wish to continue?"
     printBill(items, selected_items,
               total_amount);
 }
-
