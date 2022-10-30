@@ -1,49 +1,24 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-vector<int> output(vector<int> &input){
-	
-	int n=input.size();
-
-for(int i=0;i<n/2;i++){
-	
-	swap(input[i],input[n-1-i]);
-}
-	
-	for(int i=1;i<n;i+=2){
-		
-		int a=input[n-1];
-		
-		for(int j=n-1;j>i;j--){
-			input[j]=input[j-1];
-		}
-		
-		input[i]=a;
-	}
-	return input;
+var numbers = [2,4,6,8,10]
+let length = numbers.length;
+for (var i = 0; i < length/2; i++){
+  let temp;
+  temp=numbers[i];
+  numbers[i]= numbers[length-1-i];
+   numbers[length-1-i] =temp; 
 }
 
-int main(){
-	
-	vector<int> input;
+for (var i = 1; i < length; i=i+2){
+    let a=numbers[length-i];
 
-	input.push_back(2);
-	input.push_back(4);
-	input.push_back(6);
-	input.push_back(8);
-	input.push_back(10);
-	
-
-
-int n=input.size();
-
-output(input);
-for(int i=0;i<n;i++){
-
-	cout<<input[i]<<" ";
+    for (var j = length-1; j>i; j--){
+     numbers[j] = numbers[j-1];             
+        
 }
-	return 0;
+    numbers[i]=a;
+
 }
 
-//input[2,4,6,8,10]
-//output[10,2,8,4,6]
+numbers.forEach(function(entry) {
+  console.log(entry);
+});
+
